@@ -6,22 +6,22 @@ function pow(x, n) {
     result *= x;
   }
   return result;
-} // сступінь
+}
 function ucFirst(str) {
   if (!str) {
     return str;
   }
 
   return str[0].toUpperCase() + str.slice(1);
-} // імя з великої букви
+}
 const change = function (salary) {
   let tax = 18;
   let allTax = tax + 1.5;
   return salary - (salary / 100) * allTax;
-}; // зарплата
+};
 function getRandomNumber(number) {
   return Math.ceil(Math.random() * number);
-} // рандомне число
+}
 const countLetter = function (letter, word) {
   let count = 0;
   for (let i = 0; i < word.length; i++) {
@@ -30,7 +30,7 @@ const countLetter = function (letter, word) {
     }
   }
   return count;
-}; // кількість букв
+};
 const convertCurrency = function (firstCurrency) {
   let secondCurrency = "";
   if (firstCurrency.slice(-3).toUpperCase() === "UAH") {
@@ -42,12 +42,12 @@ const convertCurrency = function (firstCurrency) {
     secondCurrency = "Error";
   }
   return secondCurrency;
-}; // конвертор валют
+};
 function getRandomPassword(len) {
   if (len > 10) len = 10;
   len = len * -1;
   return Math.random().toString(36).slice(len);
-} // рандомний пароль
+}
 const deleteLetters = function (deleteLetter, string) {
   let formatedString = "";
 
@@ -59,12 +59,12 @@ const deleteLetters = function (deleteLetter, string) {
     formatedString += letter;
   }
   return formatedString;
-}; // видалення літер
+};
 const isPalyndrom = function (string) {
   const modyfiedString = string.split(" ").join("").toLowerCase();
   const reverseString = modyfiedString.split("").reverse().join("");
   return modyfiedString === reverseString;
-}; // полірандом
+};
 const deleteDuplicateLetter = (string) => {
   const changeString = string.toLowerCase().split("");
   let stringResult = "";
@@ -77,7 +77,7 @@ const deleteDuplicateLetter = (string) => {
     }
   }
   return stringResult;
-}; // видалення дублікатів
+};
 document.writeln(
   `Функція №1 найбільше число серед заданних : ${getMaxDigit(
     prompt("веддіть декілька чисел")
